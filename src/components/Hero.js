@@ -14,41 +14,41 @@ export const Hero = () => {
           </div>
 
           {/* Form Container */}
-          <form className="space-y-6 bg-white p-6">
+          <form className="space-y-6 bg-white">
             {/* Top Menu - Two Options */}
             <div className="flex w-full">
               <button
                 onClick={() => setSelectedMenu('menu1')}
-                className={`font-semibold w-full px-4 py-2 ${selectedMenu === 'menu1' ? 'bg-blue-500 text-white' : 'bg-gray-300'}`}
+                className={`font-semibold w-full py-4 ${selectedMenu === 'menu1' ? 'bg-blue-500 text-white' : 'bg-gray-300'}`}
               >
                 3-Step Easy Search&reg;
               </button>
               <button
                 onClick={() => setSelectedMenu('menu2')}
-                className={`font-semibold w-full px-4 py-2 ${selectedMenu === 'menu2' ? 'bg-blue-500 text-white' : 'bg-gray-300'}`}
+                className={`font-semibold w-full py-4 ${selectedMenu === 'menu2' ? 'bg-blue-500 text-white' : 'bg-gray-300'}`}
               >
                 Search By Serial Number
               </button>
             </div>
 
             {/* Dropdowns - Only show if a menu is selected */}
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-4 p-6">
               <div className="col-span-1">
-                <select className="w-full px-4 py-2 border border-gray-300 rounded-lg">
+                <select className="w-full px-4 py-2 border border-gray-300 ">
                   <option>Select Option 1</option>
                   <option>Option 1.1</option>
                   <option>Option 1.2</option>
                 </select>
               </div>
               <div className="col-span-1">
-                <select className="w-full px-4 py-2 border border-gray-300 rounded-lg">
+                <select className="w-full px-4 py-2 border border-gray-300 ">
                   <option>Select Option 2</option>
                   <option>Option 2.1</option>
                   <option>Option 2.2</option>
                 </select>
               </div>
               <div className="col-span-1">
-                <select className="w-full px-4 py-2 border border-gray-300 rounded-lg">
+                <select className="w-full px-4 py-2 border border-gray-300 ">
                   <option>Select Option 3</option>
                   <option>Option 3.1</option>
                   <option>Option 3.2</option>
